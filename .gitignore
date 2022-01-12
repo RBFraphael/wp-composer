@@ -1,0 +1,29 @@
+# Core files (obtained with composer)
+/cms/
+!/content/
+/content/plugins/*
+/content/themes/twenty*
+/vendor/
+
+# Custom plugins
+!/content/plugins/my-plugin
+!/content/plugins/my-second-plugin
+
+# Environment configuration
+local-config.php
+
+# Package manager lock files
+composer.lock
+package-lock.json
+yarn.lock
+
+# Cache, logs, database dumps and other unnecessary things
+*.log
+*.sql
+*.sqlite
+.DS_Store
+.idea
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+deploy*

@@ -1,0 +1,30 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers" : "^2.0",
+        "johnpbloch/wordpress": ">=5.8",
+        "wpackagist-plugin/wp-optimizer": ">=1.5.9",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": ">=4.4.9",
+        "wpackagist-plugin/contact-form-7": ">=5.5.3",
+        "wpackagist-plugin/contact-form-cfdb7": ">=1.2.6.2",
+        "wpackagist-theme/twentytwentyone": ">=1.4"
+    },
+    "extra": {
+        "installer-paths": {
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "cms",
+        "wordpress-languages": ["pt_BR"],
+        "wordpress-language-dir": "content/languages"
+    }
+}
