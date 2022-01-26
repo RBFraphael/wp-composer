@@ -7,12 +7,12 @@
     ],
     "require": {
         "composer/installers" : "^2.0",
-        "johnpbloch/wordpress": ">=5.8",
-        "wpackagist-plugin/wp-optimizer": ">=1.5.9",
-        "wpackagist-plugin/all-in-one-wp-security-and-firewall": ">=4.4.9",
-        "wpackagist-plugin/contact-form-7": ">=5.5.3",
+        "johnpbloch/wordpress": ">=5.9",
+        "wpackagist-plugin/wp-optimize": ">=3.2.2",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": ">=4.4.10",
+        "wpackagist-plugin/contact-form-7": ">=5.5.4",
         "wpackagist-plugin/contact-form-cfdb7": ">=1.2.6.2",
-        "wpackagist-theme/twentytwentyone": ">=1.4"
+        "wpackagist-theme/twentytwentytwo": ">=1.0"
     },
     "extra": {
         "installer-paths": {
