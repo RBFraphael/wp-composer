@@ -10,4 +10,6 @@ $table_prefix = "wp_";
 
 /* WordPress URL. */
 define("WP_HOME", "http://localhost.com" );
-define("WP_SITEURL", WP_HOME."/cms" );
+
+/* Misc */
+define( 'WP_DEBUG', false );
