@@ -1,5 +1,5 @@
 <?php
-/* Dataabase settings */
+/* Database settings */
 define("DB_NAME", "database");
 define("DB_USER", "db_user");
 define("DB_PASSWORD", "db_password");
@@ -9,7 +9,7 @@ define("DB_CHARSET", "utf8");
 $table_prefix = "wp_";
 
 /* WordPress URL. */
-define("WP_HOME", "http://localhost.com" );
+define("WP_HOME", "http://localhost.com");
 
 /**
  * Authentication unique keys and salts.
@@ -25,4 +25,4 @@ define("LOGGED_IN_SALT", "put your unique phrase here");
 define("NONCE_SALT", "put your unique phrase here");
 
 /* Misc */
-define( 'WP_DEBUG', false );
+define("WP_DEBUG", false);
