@@ -8,6 +8,7 @@
     "require": {
         "composer/installers" : "^2.0",
         "johnpbloch/wordpress": ">=5.9",
+        "bjornjohansen/wplang": "^0.1.1",
         "wpackagist-plugin/wp-optimize": ">=3.2.2",
         "wpackagist-plugin/all-in-one-wp-security-and-firewall": ">=4.4.10",
         "wpackagist-plugin/contact-form-7": ">=5.5.4",
