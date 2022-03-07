@@ -4,23 +4,20 @@
 
 Git-ready version of Composer-based Wordpress. Very useful for development, easy deployment and CI/CD configurations. With a compact, easy-to-understand and easy-to-maintain file structure.
 
+## 0. Requirements
+
+- PHP 7.2+ installed on your machine
+- ```php``` command enabled on terminal/cmd (PHP's path added to your PATH env. var)
+
 ## 1. Installing
 
 ### If you have Composer 1.x installed
 
-Just clone this repository and run ```composer install``` inside this folder. After that, jump to next step.
-
-### If you have Composer 2.x installed (or if you haven't any Composer yet)
-
-Unfortunately, the Wordpress through Composer only works with Composer 1. Fortunately, this repository comes with latest Composer 1.X version. So, you only need to run ```php composer install``` (```php composer``` tells your terminal to load PHP with local composer) inside this folder and all things will be configured. After that, jump to next step.
-
-### If you don't have Composer and PHP installed
-
-So, I can't help you bro. You need at least PHP installed on your machine to be able to use Composer and this repository. Search in your favorite search engine for how to install PHP on your machine, or view the [official PHP installation page](https://www.php.net/manual/install.php), then try again.
+Just clone this repository and run ```php composer install``` inside this folder. After that, jump to next step.
 
 ## 2. Configure
 
-The configuration process is simple. You only need to copy (or rename) ```local-config.example.php``` to ```local-config.php``` and edit that file, inserting your site's database configuration, URL and salt keys (that you can generate at [WordPress.org secret-key service](https://api.wordpress.org/secret-key/1.1/salt/)). After that, all configuration can be done from your web browser, accessing your site's URL and following normal Wordpress installation process.
+The configuration process is simple. You only need to duplicate and rename ```local-config.example.php``` to ```local-config.php```, then edit that file, inserting your site's database configuration, URL and salt keys (that you can generate at [WordPress.org secret-key service](https://api.wordpress.org/secret-key/1.1/salt/)). After that, all configuration can be done from your web browser, accessing your site's URL and following normal Wordpress installation process.
 
 **Note:** To access Wordpress admin panel, you need to access your site's URL followed by ```/cms/wp-admin``` or ```/cms/wp-login.php``` (for example, http://mywebsite.com/cms/wp-admin or http://mywebsite.com/cms/wp-login.php).
 
