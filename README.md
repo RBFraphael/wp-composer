@@ -11,8 +11,6 @@ Git-ready version of Composer-based Wordpress. Very useful for development, easy
 
 ## 1. Installing
 
-### If you have Composer 1.x installed
-
 Just clone this repository and run ```php composer install``` inside this folder. After that, jump to next step.
 
 ## 2. Configure
