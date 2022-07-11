@@ -84,6 +84,7 @@ WPConfig::set("WPLANG", env("WP_LANG") ?? "en_US");
 /**
  * Debugging settings
  */
+WPConfig::set("WP_DEBUG", env("WP_DEBUG") ?? false);
 WPConfig::set("WP_DEBUG_DISPLAY", env("WP_DEBUG_DISPLAY") ?? false);
 WPConfig::set("WP_DEBUG_LOG", env("WP_DEBUG_LOG") ?? false);
 WPConfig::set("SCRIPT_DEBUG", env("SCRIPT_DEBUG") ?? false);
