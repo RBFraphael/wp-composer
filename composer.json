@@ -44,10 +44,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php -r \"rmdir('web/cms/wp-content');\""
+            "php config/post-install.php"
         ],
         "post-update-cmd": [
-            "php -r \"rmdir('web/cms/wp-content');\""
+            "php config/post-install.php"
         ]
     }
 }
