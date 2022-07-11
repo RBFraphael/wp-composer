@@ -42,3 +42,7 @@ After deploying your Wordpress application, you need to point your webserver (Ap
 ## 7. Versioning environments
 
 Although not recommended, you can version development, testing and production environments. To do this, you just need to edit the corresponding file at ```/config/environments/<environment>.php```, and all settings set on ```.env``` file will be overridden by settings on respective environment script.
+
+## 8. Languages
+
+To add a language to your Wordpress, you need to require the desired language from [wp-languages.github.io](https://wp-languages.github.io) repository. For example, to install Brazillian portuguese (codenamed "pt_br"), run ```composer require koodimonni-language/pt_br``` in your project's root, or add ```koodimonni-language/pt_br: "*"``` to **require** section of your ```composer.json``` file.
