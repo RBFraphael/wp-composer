@@ -42,5 +42,13 @@
             "composer/installers": true,
             "koodimonni/composer-dropin-installer": true
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"rmdir('web/cms/wp-content');\""
+        ],
+        "post-update-cmd": [
+            "php -r \"rmdir('web/cms/wp-content');\""
+        ]
     }
 }
