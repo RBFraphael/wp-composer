@@ -33,12 +33,14 @@ if (file_exists($root."/.env")) {
  * Default: production
  */
 define("WP_ENV", env("WP_ENV") ?? "production");
+define("WP_ENVIRONMENT_TYPE", WP_ENV);
 
 /**
  * URLs
  */
 WPConfig::set("WP_HOME", env("WP_HOME"));
 WPConfig::set("WP_SITEURL", env("WP_SITEURL"));
+WPConfig::set("COOKIE_DOMAIN", env("COOKIE_DOMAIN") ?? parse_url(WPConfig::get("WP_HOME"), PHP_URL_HOST));
 
 /**
  * Custom content directory
@@ -79,7 +81,9 @@ WPConfig::set("DISABLE_WP_CRON", env("DISABLE_WP_CRON") ?? false);
 WPConfig::set("DISALLOW_FILE_EDIT", env("DISALLOW_FILE_EDIT") ?? true);
 WPConfig::set("DISALLOW_FILE_MODS", env("DISALLOW_FILE_MODS") ?? true);
 WPConfig::set("WP_POST_REVISIONS", env("WP_POST_REVISIONS") ?? true);
-WPConfig::set("WPLANG", env("WP_LANG") ?? "en_US");
+WPConfig::set("WP_CACHE", env("WP_CACHE") ?? true);
+WPConfig::set("WP_MEMORY_LIMIT", env("WP_MEMORY_LIMIT") ?? "64M");
+WPConfig::set("WP_MAX_MEMORY_LIMIT", env("WP_MAX_MEMORY_LIMIT") ?? "128M");
 
 /**
  * Debugging settings
