@@ -1,0 +1,3 @@
+path: web/cms
+server:
+  docroot: web
