@@ -1,24 +1,41 @@
-# Core files (obtained with composer)
-/cms/
-!/content/
-/content/plugins/*
-/content/themes/twenty*
-/vendor/
+# Application
+web/app/mu-plugins
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/themes/twenty*
+!web/app/themes/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/*cache*/*
+web/app/*backup*/*
+web/app/languages
 
-# Custom plugins
-!/content/plugins/my-plugin
-!/content/plugins/my-second-plugin
+# WordPress
+web/cms
+web/.htaccess
 
-# Environment configuration
-local-config.php
+# Logs
+*.log
 
-# Package manager lock files
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
 composer.lock
+
+# Node
+node_modules
 package-lock.json
 yarn.lock
 
-# Cache, logs, database dumps and other unnecessary things
-*.log
+# WP-CLI
+wp-cli.local.yml
+
+# Cache, database dumps and other unnecessary things
 *.sql
 *.sqlite
 .DS_Store
