@@ -18,7 +18,6 @@
     "require": {
         "composer/installers" : "^2.1",
         "johnpbloch/wordpress": "^6.0",
-        "koodimonni-language/en_us": "*",
         "oscarotero/env": "^2.1",
         "vlucas/phpdotenv": "^5.4",
         "wpackagist-theme/twentytwentytwo": "^1.2"
