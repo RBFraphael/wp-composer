@@ -11,7 +11,7 @@ $root = dirname(__DIR__);
 /**
  * Website root (that your server - Apache, NGINX, etc - will point to)
  */
-$webroot = $root . "/web";
+$webroot = $root;
 
 /**
  * Use of .env and .env.local files to set WordPress constants

@@ -13,5 +13,5 @@ function removeDir($dir){
     return rmdir($dir);
 }
 
-$wpContent = dirname(__DIR__)."/web/cms/wp-content";
+$wpContent = dirname(__DIR__)."/cms/wp-content";
 removeDir($wpContent);

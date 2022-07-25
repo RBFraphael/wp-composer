@@ -1,19 +1,19 @@
 # Application
-web/app/mu-plugins
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/themes/twenty*
-!web/app/themes/.gitkeep
-web/app/upgrade
-web/app/uploads/*
-!web/app/uploads/.gitkeep
-web/app/*cache*/*
-web/app/*backup*/*
-web/app/languages
+app/mu-plugins
+app/plugins/*
+!app/plugins/.gitkeep
+app/themes/twenty*
+!app/themes/.gitkeep
+app/upgrade
+app/uploads/*
+!app/uploads/.gitkeep
+app/*cache*/*
+app/*backup*/*
+app/languages
 
 # WordPress
-web/cms
-web/.htaccess
+cms
+.htaccess
 
 # Logs
 *.log
