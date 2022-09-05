@@ -17,7 +17,9 @@ Just clone this repository and run ```php composer install``` inside this folder
 
 The configuration process is simple. You only need to duplicate and rename ```.env.example``` to ```.env```, then edit that file, inserting your site's database configuration, URL and salt keys (that you can generate at [WordPress.org secret-key service](https://api.wordpress.org/secret-key/1.1/salt/) or at [my own Salt generator](https://rbfraphael.github.io/wordpress/salt_generator.html) which outputs in .env format). After that, all configuration can be done from your web browser, accessing your site's URL and following normal Wordpress installation process.
 
-**Note:** To access Wordpress admin panel, you need to access your site's URL followed by ```/cms/wp-admin``` or ```/cms/wp-login.php``` (for example, http://mywebsite.com/cms/wp-admin or http://mywebsite.com/cms/wp-login.php).
+**Note (1):** To access Wordpress admin panel, you need to access your site's URL followed by ```/cms/wp-admin``` or ```/cms/wp-login.php``` (for example, http://mywebsite.com/cms/wp-admin or http://mywebsite.com/cms/wp-login.php).
+
+**Note (2):** If you set ```WP_HOME``` environment variable to "auto", the ```WP_HOME``` will automatically be set based on requested domain (for example, ```https://mywebsite.com/lorem/ipsum-dolor-sit-amet``` will set ```WP_HOME``` to "https://mywebsite.com/").
 
 ## 3. Adding plugins
 

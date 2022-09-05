@@ -38,7 +38,9 @@ define("WP_ENVIRONMENT_TYPE", WP_ENV);
 /**
  * URLs
  */
-WPConfig::set("WP_HOME", env("WP_HOME"));
+$WP_HOME = env("WP_HOME");
+$WP_HOME = $WP_HOME == "auto" ? (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]" : $WP_HOME;
+WPConfig::set("WP_HOME",$WP_HOME);
 WPConfig::set("WP_SITEURL", env("WP_SITEURL"));
 WPConfig::set("COOKIE_DOMAIN", env("COOKIE_DOMAIN") ?? parse_url(WPConfig::get("WP_HOME"), PHP_URL_HOST));
 
