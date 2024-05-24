@@ -1,4 +1,6 @@
 {
+    "name": "rbfraphael/wp-composer",
+    "description": "Wordpress managed by Composer",
     "repositories": [
         {
             "type": "composer",
@@ -16,11 +18,16 @@
         }
     ],
     "require": {
-        "composer/installers" : "^2.1",
-        "johnpbloch/wordpress": "^6.0",
+        "php": ">=8.2",
+        "composer/installers" : "^2.2",
+        "johnpbloch/wordpress": "^6.5",
         "oscarotero/env": "^2.1",
-        "vlucas/phpdotenv": "^5.4",
-        "wpackagist-theme/twentytwentytwo": "^1.2"
+        "vlucas/phpdotenv": "^5.6",
+        "wpackagist-theme/twentytwentyfour": "^1.1",
+        "wpackagist-plugin/wordpress-seo": "^22.7",
+        "wpackagist-plugin/wp-optimize": "^3.3.2",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": "^5.3.0",
+        "wpackagist-plugin/wp-mail-smtp": "^4.0.1"
     },
     "extra": {
         "installer-paths": {
